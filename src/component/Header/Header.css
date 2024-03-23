@@ -15,8 +15,8 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
+     /* animation fadeIn coming from index.css as fadeIn keyframe*/
     animation: fadeIn 3s;  
-    /* animation fadeIn coming from index.css as fadeIn keyframe*/
 }
 
 .header-contents h2{
