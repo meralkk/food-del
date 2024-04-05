@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
   // to make the navbar menu active
   const [menu,setMenu] = useState("home");
@@ -26,7 +26,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faShoppingBasket} size="xl" style={{color: "#49557e",}} />
               <div className="dot"></div>
         </div>
-            <button>sign in</button>
+            <button onClick={()=>setShowLogin(true)}>sign in</button>
         </div>
     </div>
   )
